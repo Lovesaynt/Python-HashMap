@@ -29,7 +29,7 @@ class Hashmaps:
         raise KeyError('key') # Key não encontrada.
 
 
-    def remove(self, key): # Remove o balde indicado.
+    def remove(self, key): # Remove o bucket indicado.
         index = self._hash(key) # Calcula o index da chave x do bucket.
         bucket = self.buckets[index] # Determina a chave e seu valor ao bucket.
 
